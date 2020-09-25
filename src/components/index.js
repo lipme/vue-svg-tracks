@@ -1,1 +1,1 @@
-export { default as SvgTrack } from './svgtrack'
+export { default as VueSvgTracks } from './svgtracks'

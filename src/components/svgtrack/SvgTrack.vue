@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import SvgTrackLabel from '@/components/SvgMsa/SvgTrackLabel.vue';
-import SvgTrackContent from '@/components/SvgMsa/SvgTrackContent.vue';
+import SvgTrackLabel from '@/components/svgtracklabel'
+import SvgTrackContent from '@/components/svgtrackcontent'
 
 export default {
   components: {
@@ -22,34 +22,15 @@ export default {
   props: {
     track: {
       type: Object,
-      default() {
-        return {};
+      default () {
+        return {}
       }
     },
     y: { type: Number, default: 1 },
     fctScaleX: { type: Function, default: () => {} },
     length: { type: Number, default: 150 },
-    textFontSize: { type: Number, default: 10 }
-  },
-  data() {
-    return {
-      step: 10,
-      height: 10
-    };
-  },
-  computed: {
-    getGlobalWidth() {
-      const l = this.fctScaleX(this.length - 1) - this.fctScaleX(0) + 5;
-      return l;
-    }
-  },
-  methods: {
-    getScaleWidth(i) {
-      return i === 1 || i % this.step === 0 ? '2px' : '1px';
-    },
-    getScaleHeight(i) {
-      return i === 1 || i % this.step === 0 ? '8px' : '7px';
-    }
+    textFontSize: { type: Number, default: 10 },
+    height: { type: Number, default: 10 }
   }
-};
+}
 </script>

@@ -18,29 +18,28 @@ export default {
   props: {
     track: {
       type: Object,
-      default() {
-        return {};
+      default () {
+        return {}
       }
     },
     aX: { type: Function, default: () => {} },
     height: { type: Number, default: 8 },
     y: { type: Number, default: 1 },
-    textFontSize: { type: Number, default: 10 },
     length: { type: Number, default: 150 }
   },
   computed: {
-    rectY() {
-      return this.y - this.textFontSize + 1;
+    rectY () {
+      return this.y
     },
 
-    getShift() {
-      return Math.round(((this.aX(1) - this.aX(0)) / 2) * 10) / 10;
+    getShift () {
+      return Math.round(((this.aX(1) - this.aX(0)) / 2) * 10) / 10
     },
     /**
      * Build an array of objects with attributes x,color, width
      */
-    getRect() {
-      const displayedRect = [];
+    getRect () {
+      const displayedRect = []
       this.track.features.forEach(f => {
         if ('positions' in f) {
           f.positions.forEach(pos => {
@@ -49,19 +48,19 @@ export default {
                 x: this.rectX(pos[0] - 1),
                 color: f.color,
                 width: this.rectX(pos[1]) - this.rectX(pos[0] - 1)
-              });
+              })
             }
-          });
+          })
         }
-      });
-      return displayedRect;
+      })
+      return displayedRect
     }
   },
   methods: {
     /** x coordinate of the rectangle at the index i */
-    rectX(i) {
-      return this.aX(i) - this.getShift;
+    rectX (i) {
+      return this.aX(i) - this.getShift
     }
   }
-};
+}
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <text :x="1" :y="y" :font-size="textFontSize" fill="black" font-family="monospace">
+  <text :x="1" :y="computedY" :font-size="textFontSize" fill="black" font-family="monospace">
     <title>{{ label }}</title>
     {{ displayedLabel }}
   </text>
@@ -14,21 +14,24 @@ export default {
     textFontSize: { type: Number, default: 10 }
   },
   computed: {
-    displayLabelLength() {
-      return this.maxWidth / 10;
+    computedY () {
+      return this.y + this.textFontSize
     },
-    displayedLabel() {
+    displayLabelLength () {
+      return this.maxWidth / 10
+    },
+    displayedLabel () {
       if (this.label.length >= this.displayLabelLength) {
-        let title = '';
-        const splitName = this.label.split('');
+        let title = ''
+        const splitName = this.label.split('')
         splitName.forEach(x => {
-          if (title.length <= this.displayLabelLength) title = title.concat(String(x));
-        });
-        title = title.concat('...');
-        return title;
+          if (title.length <= this.displayLabelLength) title = title.concat(String(x))
+        })
+        title = title.concat('...')
+        return title
       }
-      return this.label;
+      return this.label
     }
   }
-};
+}
 </script>
