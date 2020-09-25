@@ -1,4 +1,33 @@
-# vue-svg-track
+# vue-svg-tracks
+
+## Synopsis
+
+Vue component for displaying tracks
+
+![Simple exa:mple](public/images/simpleExample.png)
+
+## Installation
+
+npm install --save vue-svg-tracks
+
+## Usage
+
+~~~~
+import { VueSvgTracks } from 'vue-svg-tracks';
+~~~~
+
+~~~~
+<svg :width="width" :height="height">
+      <svg-tracks
+        :tracks="tracks"
+        :length="length"
+        :track-height="trackHeight"
+        :sep="sep"
+        :offset-x="offsetX"
+      />
+</svg>
+~~~~
+
 
 ## Project setup
 ```
