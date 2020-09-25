@@ -9,7 +9,9 @@
       :width="r.width"
       :fill="r.color"
       fill-opacity="0.8"
-    ></rect>
+    >
+      <title>{{ r.title }}</title>
+    </rect>
   </g>
 </template>
 
@@ -40,11 +42,12 @@ export default {
      */
     getRect () {
       const displayedRect = []
-      this.track.features.forEach(f => {
+      this.track.features.forEach((f) => {
         if ('positions' in f) {
-          f.positions.forEach(pos => {
+          f.positions.forEach((pos) => {
             if (typeof pos !== 'undefined' && pos.length === 2) {
               displayedRect.push({
+                title: this.track.trackLabel + '-' + f.type + '-' + pos[0] + '(' + pos[1] + ')',
                 x: this.rectX(pos[0] - 1),
                 color: f.color,
                 width: this.rectX(pos[1]) - this.rectX(pos[0] - 1)

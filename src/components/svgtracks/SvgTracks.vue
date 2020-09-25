@@ -9,6 +9,7 @@
       :track="track"
       :text-font-size="fontSize"
       :height="trackHeight"
+      :displayLabel="displayLabels"
     />
   </g>
 </template>
@@ -44,6 +45,10 @@ export default {
     sep: {
       type: Number,
       default: 10
+    },
+    displayLabels: {
+      type: Boolean,
+      default: true
     }
   },
   computed: {

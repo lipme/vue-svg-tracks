@@ -8,6 +8,7 @@
         :track-height="trackHeight"
         :sep="sep"
         :offset-x="offsetX"
+        :display-labels="displayLabels"
       />
     </svg>
   </div>
@@ -29,6 +30,7 @@ export default {
       trackHeight: 20,
       sep: 5,
       offsetX: 100,
+      displayLabels: true,
       tracks: [
         {
           features: [
