@@ -4,7 +4,7 @@
 
 Vue component for displaying tracks
 
-![Simple exa:mple](public/images/simpleExample.png)
+![Simple example](public/images/simpleExample.png)
 
 ## Installation
 
