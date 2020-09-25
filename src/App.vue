@@ -9,6 +9,7 @@
         :sep="sep"
         :offset-x="offsetX"
         :display-labels="displayLabels"
+        :tooltip="tooltip"
       />
     </svg>
   </div>
@@ -31,6 +32,7 @@ export default {
       sep: 5,
       offsetX: 100,
       displayLabels: true,
+      tooltip: true,
       tracks: [
         {
           features: [

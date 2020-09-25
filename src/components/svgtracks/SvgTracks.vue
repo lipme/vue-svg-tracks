@@ -10,6 +10,7 @@
       :text-font-size="fontSize"
       :height="trackHeight"
       :displayLabel="displayLabels"
+      :tooltip="tooltip"
     />
   </g>
 </template>
@@ -49,7 +50,8 @@ export default {
     displayLabels: {
       type: Boolean,
       default: true
-    }
+    },
+    tooltip: { type: Boolean, default: true }
   },
   computed: {
     /**

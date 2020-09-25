@@ -10,7 +10,7 @@
       :fill="r.color"
       fill-opacity="0.8"
     >
-      <title>{{ r.title }}</title>
+      <title v-if="tooltip">{{ r.title }}</title>
     </rect>
   </g>
 </template>
@@ -27,7 +27,8 @@ export default {
     aX: { type: Function, default: () => {} },
     height: { type: Number, default: 8 },
     y: { type: Number, default: 1 },
-    length: { type: Number, default: 150 }
+    length: { type: Number, default: 150 },
+    tooltip: { type: Boolean, default: true }
   },
   computed: {
     rectY () {

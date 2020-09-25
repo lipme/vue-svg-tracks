@@ -13,6 +13,7 @@
       :track="track"
       :a-x="fctScaleX"
       :height="height"
+      :tooltip="tooltip"
     >
     </svg-track-content>
   </g>
@@ -39,7 +40,9 @@ export default {
     length: { type: Number, default: 150 },
     textFontSize: { type: Number, default: 10 },
     height: { type: Number, default: 10 },
-    displayLabel: { type: Boolean, default: true }
+    displayLabel: { type: Boolean, default: true },
+    tooltip: { type: Boolean, default: true }
+
   }
 }
 </script>
