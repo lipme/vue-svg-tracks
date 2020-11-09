@@ -1,3 +1,3 @@
-import VueSvgTracks from './SvgTracks.vue'
+import VueSvgTracks from "./SvgTracks.vue";
 
-export default VueSvgTracks
+export default VueSvgTracks;

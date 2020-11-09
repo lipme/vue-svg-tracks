@@ -1,3 +1,3 @@
-import SvgTrackLabel from './SvgTrackLabel.vue'
+import SvgTrackLabel from "./SvgTrackLabel.vue";
 
-export default SvgTrackLabel
+export default SvgTrackLabel;

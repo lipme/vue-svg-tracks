@@ -20,20 +20,20 @@
 </template>
 
 <script>
-import SvgTrackLabel from '@/components/svgtracklabel'
-import SvgTrackContent from '@/components/svgtrackcontent'
+import SvgTrackLabel from "@/components/svgtracklabel";
+import SvgTrackContent from "@/components/svgtrackcontent";
 
 export default {
   components: {
     SvgTrackLabel,
-    SvgTrackContent
+    SvgTrackContent,
   },
   props: {
     track: {
       type: Object,
-      default () {
-        return {}
-      }
+      default() {
+        return {};
+      },
     },
     y: { type: Number, default: 1 },
     fctScaleX: { type: Function, default: () => {} },
@@ -41,8 +41,7 @@ export default {
     textFontSize: { type: Number, default: 10 },
     height: { type: Number, default: 10 },
     displayLabel: { type: Boolean, default: true },
-    tooltip: { type: Boolean, default: true }
-
-  }
-}
+    tooltip: { type: Boolean, default: true },
+  },
+};
 </script>

@@ -16,14 +16,14 @@
 </template>
 
 <script>
-import SvgTracks from '@/components/svgtracks'
+import SvgTracks from "@/components/svgtracks";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    SvgTracks
+    SvgTracks,
   },
-  data () {
+  data() {
     return {
       width: 700,
       height: 600,
@@ -39,44 +39,45 @@ export default {
             {
               positions: [
                 [1, 20],
-                [109, 234]
+                [109, 234],
               ],
-              type: 'label1',
-              color: 'green'
+              type: "label1",
+              color: "green",
+              "fill-opacity": 0.2,
             },
             {
               positions: [[21, 108]],
-              type: 'label2',
-              color: 'pink'
-            }
+              type: "label2",
+              color: "pink",
+            },
           ],
-          trackLabel: 'track1'
+          trackLabel: "track1",
         },
         {
           features: [
             {
               positions: [
                 [5, 15],
-                [109, 234]
+                [109, 234],
               ],
-              type: 'label1',
-              color: 'blue'
+              type: "label1",
+              color: "blue",
             },
             {
               positions: [
                 [50, 65],
-                [16, 20]
+                [16, 20],
               ],
-              type: 'label2',
-              color: 'red'
-            }
+              type: "label2",
+              color: "red",
+            },
           ],
-          trackLabel: 'track2'
-        }
-      ]
-    }
-  }
-}
+          trackLabel: "track2-tee",
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
