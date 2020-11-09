@@ -44,7 +44,7 @@
     "publish-npm": "npm publish --access public"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "core-js": "^3.7.0",
     "d3-scale": "^3.2.3",
     "vue": "^2.6.11"
   },
@@ -54,15 +54,15 @@
     "@vue/cli-plugin-unit-jest": "^4.5.8",
     "@vue/cli-service": "^4.5.8",
     "@vue/eslint-config-standard": "^5.1.2",
-    "@vue/test-utils": "^1.0.3",
+    "@vue/test-utils": "^1.1.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.13.0",
+    "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-standard": "^4.0.2",
     "eslint-plugin-vue": "^6.2.2",
     "prettier": "^2.1.2",
     "vue-template-compiler": "^2.6.11"
