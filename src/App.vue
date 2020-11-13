@@ -30,7 +30,7 @@ export default {
       length: 300,
       trackHeight: 20,
       sep: 5,
-      offsetX: 100,
+      offsetX: 120,
       displayLabels: true,
       tooltip: true,
       tracks: [
@@ -57,11 +57,11 @@ export default {
           features: [
             {
               positions: [
-                [5, 15],
+                [1, 15],
                 [109, 234],
               ],
               type: "label1",
-              color: "blue",
+              color: "yellow",
             },
             {
               positions: [
@@ -72,7 +72,7 @@ export default {
               color: "red",
             },
           ],
-          trackLabel: "track2-tee",
+          trackLabel: "track2-test",
         },
       ],
     };

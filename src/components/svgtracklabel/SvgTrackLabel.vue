@@ -24,17 +24,17 @@ export default {
       return this.y + this.textFontSize;
     },
     displayLabelLength() {
-      return this.maxWidth / 10;
+      return this.maxWidth / 10 - 2;
     },
     displayedLabel() {
       if (this.label.length > this.displayLabelLength) {
         let title = "";
         const splitName = this.label.split("");
         splitName.forEach((x) => {
-          if (title.length <= this.displayLabelLength)
+          if (title.length < this.displayLabelLength - 3)
             title = title.concat(String(x));
         });
-        title = title.concat("...");
+        title = title.concat("..");
         return title;
       }
       return this.label;
