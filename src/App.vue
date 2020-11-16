@@ -72,7 +72,7 @@ export default {
               color: "red",
             },
           ],
-          trackLabel: "track2-test",
+          trackLabel: "track2-test-long-name",
         },
       ],
     };

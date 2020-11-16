@@ -38,7 +38,7 @@ export default {
     y: { type: Number, default: 1 },
     fctScaleX: { type: Function, default: () => {} },
     length: { type: Number, default: 150 },
-    textFontSize: { type: Number, default: 10 },
+    textFontSize: { type: Number, default: 15 },
     height: { type: Number, default: 10 },
     displayLabel: { type: Boolean, default: true },
     tooltip: { type: Boolean, default: true },
