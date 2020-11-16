@@ -28,7 +28,7 @@ export default {
       width: 700,
       height: 600,
       length: 300,
-      trackHeight: 20,
+      trackHeight: 22,
       sep: 5,
       offsetX: 120,
       displayLabels: true,
@@ -73,6 +73,16 @@ export default {
             },
           ],
           trackLabel: "track2-test-long-name",
+        },
+        {
+          features: [
+            {
+              positions: [[1, 234]],
+              type: "label1",
+              color: "green",
+            },
+          ],
+          trackLabel: "track3-tttt",
         },
       ],
     };

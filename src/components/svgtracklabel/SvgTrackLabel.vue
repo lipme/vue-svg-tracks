@@ -27,7 +27,7 @@ export default {
       return this.maxWidth / 10 - (this.textFontSize - 13);
     },
     displayedLabel() {
-      if (this.label.length > this.displayLabelLength) {
+      if (this.label.length > this.displayLabelLength + 3) {
         let title = "";
         const splitName = this.label.split("");
         splitName.forEach((x) => {
